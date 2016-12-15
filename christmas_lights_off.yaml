@@ -1,0 +1,9 @@
+name: Christmas Light Off
+trigger:
+  time:
+    at: 23:00:00
+    days: mon|tues|wed|thurs|fri|sat|sun
+actions:
+  - outlet:
+      aid: 'light_zone.xmas_tree'
+      on_off: 'off'

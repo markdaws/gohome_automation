@@ -1,0 +1,17 @@
+name: Sunset
+trigger:
+  time:
+    at: sunset
+    days: sun|mon|tues|wed|thurs|fri|sat
+actions:
+  - window_treatment:
+      open_closed: 'closed'
+  - light_zone:
+      # Entry
+      aid: 'light_zone.entry'
+      on_off: 'on'
+      brightness: 100
+  - light_zone:
+      # Front Door
+      aid: 'light_zone.front_door'
+      on_off: 'on'

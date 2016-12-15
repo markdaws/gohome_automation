@@ -1,0 +1,13 @@
+name: Entrance off
+trigger:
+  time:
+    at: 21:00:00
+    days: sun|mon|tues|wed|thurs|fri|sat
+actions:
+  - light_zone:
+      aid: 'light_zone.entry'
+      on_off: 'off'
+  - light_zone:
+      # Front Door
+      aid: 'light_zone.front_door'
+      on_off: 'off'

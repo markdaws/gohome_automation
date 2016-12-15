@@ -1,0 +1,17 @@
+# When the light switch near the front door is pressed 3 times in less
+# than 5 seconds, turn off all the lights.  Really useful for turning
+# off all the lights when you are leaving the house
+
+name: 'Triple Tap All Off'
+trigger:
+  feature:
+    id: 04d08d92-68bb-4278-4771-72795ac90731
+    count: 3
+    duration: 5000
+    condition:
+      attr: 'state'
+      op: '=='
+      value: 2
+actions:
+  - light_zone:
+      on_off: 'off'
