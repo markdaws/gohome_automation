@@ -5,5 +5,5 @@ trigger:
     days: mon|tues|wed|thurs|fri|sat|sun
 actions:
   - outlet:
-      aid: 'light_zone.xmas_tree
+      aid: 'light_zone.xmas_tree'
       on_off: 'on'
