@@ -5,7 +5,7 @@
 name: 'Triple Tap All Off'
 trigger:
   feature:
-    id: 04d08d92-68bb-4278-4771-72795ac90731
+    id: 9421e9c5-630b-46de-589b-4716055710f4
     count: 3
     duration: 5000
     condition:
