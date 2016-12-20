@@ -2,7 +2,7 @@
 # than 5 seconds, turn off all the lights.  Really useful for turning
 # off all the lights when you are leaving the house
 
-name: 'Triple Tap All Off'
+name: 'Triple Tap Off'
 trigger:
   feature:
     id: 9421e9c5-630b-46de-589b-4716055710f4
