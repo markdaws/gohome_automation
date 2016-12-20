@@ -1,4 +1,4 @@
-name: Christmas Light Off
+name: Xmas Lights Off
 trigger:
   time:
     at: 23:00:00
