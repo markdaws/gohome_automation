@@ -1,0 +1,15 @@
+# When the hall light switch is tapped twice in under 3 seconds, turn off all the lights
+
+name: 'Hall Double Tap'
+trigger:
+  feature:
+    id: 86006c66-4da0-41ae-5252-1f47f09ced39
+    count: 2
+    duration: 3000
+    condition:
+      attr: 'state'
+      op: '=='
+      value: 2
+actions:
+  - light_zone:
+      on_off: 'off'
