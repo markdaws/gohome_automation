@@ -1,0 +1,17 @@
+# When the light switch near the front door is pressed 2 times in less
+# than 3 seconds, turn on all the lights.  Really useful for turning
+# all the lights on quickly when you come home
+
+name: 'Entry Double Tap On'
+trigger:
+  feature:
+    id: 9f45e6b3-edd8-440d-6c63-3bce9efa543f
+    count: 2
+    duration: 3000
+    condition:
+      attr: 'state'
+      op: '=='
+      value: 2
+actions:
+  - light_zone:
+      on_off: 'on'
